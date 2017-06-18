@@ -122,7 +122,7 @@ MEM_SELF               VARCHAR2(800),
 MEM_PIC                BLOB,
 MEM_COIN               NUMBER(*),
 MEM_STATE              CHAR(1) NOT NULL,
-MEM_PHONE              NUMBER(10),
+MEM_PHONE              VARCHAR2(10),
 MEM_PBOARD             CHAR(1) NOT NULL,
 CONSTRAINT GENERAL_MEMBER_PRIMARY_KEY PRIMARY KEY(MEM_NO));
  
