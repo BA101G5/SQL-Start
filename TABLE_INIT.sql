@@ -701,8 +701,8 @@ NOCYCLE;
 CREATE TABLE ORDERDE_DETAIL(
 PICNIC_NO                  VARCHAR2(10) NOT NULL,
 P_NO                      VARCHAR2(10) NOT NULL,
-GR_NO                      VARCHAR2(10) NOT NULL,
-GS_NO                      VARCHAR2(10) NOT NULL,
+GR_NO                      VARCHAR2(10),
+GS_NO                      VARCHAR2(10),
 OD_AMOUNT                  NUMBER(3) NOT NULL,
 OD_PRICE                   NUMBER(*) NOT NULL,
 OD_DELIVER                 DATE NOT NULL,
