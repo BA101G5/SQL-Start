@@ -377,19 +377,36 @@ CREATE TABLE CHATROOM_MEMBERS(
 CHATROOM_NO              VARCHAR2(10) NOT NULL,
 MEM_NO                   VARCHAR2(10) NOT NULL,
 CHATROOM_ROLE            CHAR(1),
-BAN_UNTIL                DATE,
+BAN_UNTIL                TIMESTAMP,
 CONSTRAINT CHATROOM_MEMBERS_CHATROOMNO_FK FOREIGN KEY (CHATROOM_NO) REFERENCES CHATROOM (CHATROOM_NO),
 CONSTRAINT CHATROOM_MEMBERS_MEMNO_FK FOREIGN KEY (MEM_NO) REFERENCES GENERAL_MEMBER (MEM_NO),
 CONSTRAINT CHATEROOM_MEMBERS_PRIMARY_KEY PRIMARY KEY (CHATROOM_NO,MEM_NO));
 
-
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000001','MG00000001','1');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000001','MG00000002','0');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000001','MG00000003','0');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000001','MG00000004','0');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000001','MG00000005','0');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000002','MG00000002','1');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000002','MG00000003','0');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000002','MG00000006','0');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000002','MG00000007','0');
 
 -- 聊天室訊息紀錄.
 CREATE TABLE CHATROOM_MESSAGE(
 CR_MSG_NO                    VARCHAR2(10) NOT NULL,
 CHATROOM_NO                  VARCHAR2(10) NOT NULL,
 MEM_NO                       VARCHAR2(10) NOT NULL,
-MESSAGE_DATE                 DATE NOT NULL,
+MESSAGE_DATE                 TIMESTAMP NOT NULL,
 MESSAGE_TEXT                 CLOB,
 MESSAGE_IMG                  BLOB,
 CONSTRAINT CHATROOM_MESSAGE_CHATROOMNO_FK FOREIGN KEY (CHATROOM_NO) REFERENCES CHATROOM(CHATROOM_NO),
@@ -403,7 +420,26 @@ MAXVALUE 99999999
 NOCACHE
 NOCYCLE;
 
- 
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000003',sysdate,'安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000002','MG00000001',sysdate,'安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000003',sysdate,'安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000002',sysdate,'安安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000003',sysdate,'安安安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000002',sysdate,'安安安安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000005',sysdate,'安安安安安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000002',sysdate,'安安安安安安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000002','MG00000001',sysdate,'安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000002',sysdate,'安安安安安安安安',null);
 
 -- 野餐團的聊天室訊息記錄.
 CREATE TABLE PCHATROOM_MES(
