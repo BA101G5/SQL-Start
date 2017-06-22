@@ -648,6 +648,14 @@ CONSTRAINT PICMEM_PICNICNO_FK FOREIGN KEY(PICNIC_NO) REFERENCES PICNIC (PICNIC_N
 CONSTRAINT PICMEM_MEMNO_FK FOREIGN KEY(MEM_NO) REFERENCES GENERAL_MEMBER(MEM_NO),
 CONSTRAINT PICMEM_PK PRIMARY KEY(PICNIC_NO,MEM_NO));
 
+INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
+VALUES('PG00000001','MG00000002','團主');
+INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
+VALUES('PG00000001','MG00000004','副團主');
+INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
+VALUES('PG00000001','MG00000006','團員');
+
+COMMIT;
 
  
 -- 權限明細.
@@ -751,7 +759,7 @@ MAXVALUE 99999999
 NOCACHE
 NOCYCLE;
 
-insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','手術刀',SYSDATE,'15200','一把手術刀由一個刀柄和一個刀刃組成，大部分都以不銹鋼製造。刀刃可以有多種形式（比如右手側的，彎曲的，鐮刀狀的等等），刀刃可以更換。 它非常鋒利，切割起來不必花費力氣。手術刀只可以單獨使用。一般用塑料包裝，也可以用金屬包裝。這種情況手術刀片只能一次性使用，刀柄經清洗及高溫消毒後可重複使用。','08078708545405','U')
+insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','手術刀',SYSDATE,'15200','一把手術刀由一個刀柄和一個刀刃組成，大部分都以不銹鋼製造。刀刃可以有多種形式（比如右手側的，彎曲的，鐮刀狀的等等），刀刃可以更換。 它非常鋒利，切割起來不必花費力氣。手術刀只可以單獨使用。一般用塑料包裝，也可以用金屬包裝。這種情況手術刀片只能一次性使用，刀柄經清洗及高溫消毒後可重複使用。','08078708545405','U');
 
 insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','擔架床',SYSDATE,'1707','擔架床為運送傷者之救傷工具，由兩支承槓支撐著一塊帆布床身，承槓兩端連接手柄和滑輪。一些擔架床的承槓可以伸縮。床頭有枕袋，可塞入柔軟的物件。','08078708545405','U');
 
