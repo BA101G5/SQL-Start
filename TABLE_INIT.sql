@@ -879,3 +879,12 @@ START WITH 1
 MAXVALUE 99999999
 NOCACHE
 NOCYCLE;
+
+insert into BLOCKED_KEYWORDS(KEYWORD_NO, KEYWORD, REPLACEMENT)
+values('BK'||LPAD(KEYWORD_NO_SQ.nextval,'8','0'), 'bullshit', '***');
+insert into BLOCKED_KEYWORDS(KEYWORD_NO, KEYWORD, REPLACEMENT)
+values('BK'||LPAD(KEYWORD_NO_SQ.nextval,'8','0'), 'fuck', '***');
+insert into BLOCKED_KEYWORDS(KEYWORD_NO, KEYWORD, REPLACEMENT)
+values('BK'||LPAD(KEYWORD_NO_SQ.nextval,'8','0'), 'bitch', '***');
+insert into BLOCKED_KEYWORDS(KEYWORD_NO, KEYWORD, REPLACEMENT)
+values('BK'||LPAD(KEYWORD_NO_SQ.nextval,'8','0'), 'shit', '***');
