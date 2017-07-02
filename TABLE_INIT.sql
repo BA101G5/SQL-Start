@@ -676,7 +676,20 @@ INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
 VALUES('PG00000001','MG00000004','副團主');
 INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
 VALUES('PG00000001','MG00000006','團員');
-
+insert into picmem
+values ('PG00000001','MG00000001','團員',null,null,null);
+insert into picmem
+values ('PG00000002','MG00000001','團員',null,null,null);
+insert into picmem
+values ('PG00000008','MG00000001','團主',null,null,null);
+insert into picmem
+values ('PG00000002','MG00000003','團員',null,null,null);
+insert into picmem
+values ('PG00000002','MG00000005','團員',null,null,null);
+insert into picmem
+values ('PG00000002','MG00000008','團員',null,null,null);
+insert into picmem
+values ('PG00000002','MG00000009','團員',null,null,null);
 COMMIT;
 
  
