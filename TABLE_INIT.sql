@@ -707,6 +707,7 @@ CONSTRAINT PURVIEW_DETAIL_PK PRIMARY KEY (ADM_NO,PURVIEW_NO));
 -- 場地.
 CREATE TABLE PLACE(
 P_NO                              VARCHAR2(10) NOT NULL,
+PICNIC_NO                         VARCHAR2(10) UNIQUE,			
 MF_NO                              VARCHAR2(10) ,
 MEM_NO                             VARCHAR2(10) ,
 P_NAME                             VARCHAR2(90) NOT NULL,
@@ -721,6 +722,7 @@ P_LAT				  NUMBER(*) NOT NULL,
 P_LON				  NUMBER(*) NOT NULL,
 CONSTRAINT PLACE_MFNO_FK FOREIGN KEY (MF_NO) REFERENCES MANUFACTURERS (MF_NO),
 CONSTRAINT PLACE_MEMNO_FK FOREIGN KEY (MEM_NO) REFERENCES GENERAL_MEMBER(MEM_NO),
+CONSTRAINT PLACE_PICNOCNO_FK FOREIGN KEY (PICNIC_NO) REFERENCES PICNIC(PICNIC_NO),
 CONSTRAINT GOODS_PLACE_PK PRIMARY KEY (P_NO));
 
 CREATE SEQUENCE P_NO_SQ
@@ -742,29 +744,29 @@ values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDAT
 insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
 values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,' 	100台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a00','U',0,24.969479,121.193514);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000001','a00','U',0,24.969479,121.193514);
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a01','U',0,24.9674754,121.1932079);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000002','a01','U',0,24.9674754,121.1932079);
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a02','U',0,24.9682765,121.1900487);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000003','a02','U',0,24.9682765,121.1900487);
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a03','U',0,25.0314901,121.5332146);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000004','a03','U',0,25.0314901,121.5332146);
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a04','U',0,25.0741622,121.5341675);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000005','a04','U',0,25.0741622,121.5341675);
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a05','U',0,24.1395013,120.6322513);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000006','a05','U',0,24.1395013,120.6322513);
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a06','U',0,23.0010052,120.2094921);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000007','a06','U',0,23.0010052,120.2094921);
 
-insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
-values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a07','U',0,22.6283564,120.2863812);
+insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000008','a07','U',0,22.6283564,120.2863812);
 
 COMMIT;
 
