@@ -717,8 +717,8 @@ PIMG                               BLOB,
 P_INFO                             CLOB,
 P_STA                              CHAR(1) NOT NULL,
 P_PRICE                            NUMBER(*) NOT NULL,
-PICNIC_LAT			  NUMBER(*) NOT NULL,
-PICNIC_LON			  NUMBER(*) NOT NULL,
+P_LAT				  NUMBER(*) NOT NULL,
+P_LON				  NUMBER(*) NOT NULL,
 CONSTRAINT PLACE_MFNO_FK FOREIGN KEY (MF_NO) REFERENCES MANUFACTURERS (MF_NO),
 CONSTRAINT PLACE_MEMNO_FK FOREIGN KEY (MEM_NO) REFERENCES GENERAL_MEMBER(MEM_NO),
 CONSTRAINT GOODS_PLACE_PK PRIMARY KEY (P_NO));
@@ -730,11 +730,41 @@ MAXVALUE 99999999
 NOCACHE
 NOCYCLE;
 
-insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,PICNIC_LAT,PICNIC_LON)values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','太魯閣國家公園 ',SYSDATE,' 972花蓮縣秀林鄉富世村富世291號','40','太魯閣國家公園是台灣第四座成立的國家公園，前身為日治時期成立之次高太魯閣國立公園。第二次世界大戰後為國家級風景區，1986年11月12日公告計畫，1986年11月28日成立管理處。位於台灣東部，地跨花蓮縣、臺中市、南投縣三個行政區。園內有台灣第一條東西橫貫公路通過，稱為中橫公路系統。','A','25800','24.1587068','121.62162969999997');
+insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','太魯閣國家公園 ',SYSDATE,' 972花蓮縣秀林鄉富世村富世291號','40','太魯閣國家公園是台灣第四座成立的國家公園，前身為日治時期成立之次高太魯閣國立公園。第二次世界大戰後為國家級風景區，1986年11月12日公告計畫，1986年11月28日成立管理處。位於台灣東部，地跨花蓮縣、臺中市、南投縣三個行政區。園內有台灣第一條東西橫貫公路通過，稱為中橫公路系統。','A','25800','24.1587068','121.62162969999997');
 
-insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,PICNIC_LAT,PICNIC_LON)values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','陽明山國家公園 ',SYSDATE,' 	中華民國台北市、新北市','50','陽明山原名草山（臺羅：Tsháu-suann），泛指大屯山、七星山、紗帽山、小觀音山這一帶的山區，而非單指某座山峰。清治時期，官府憂慮賊寇可匿於林中竊取硫磺，故定期放火燒山，因此整個山區只能長出五節芒這類的芒草。','A','45870','25.1942462','121.56093629999998');
+insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','陽明山國家公園 ',SYSDATE,' 	中華民國台北市、新北市','50','陽明山原名草山（臺羅：Tsháu-suann），泛指大屯山、七星山、紗帽山、小觀音山這一帶的山區，而非單指某座山峰。清治時期，官府憂慮賊寇可匿於林中竊取硫磺，故定期放火燒山，因此整個山區只能長出五節芒這類的芒草。','A','45870','25.1942462','121.56093629999998');
 
-insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,PICNIC_LAT,PICNIC_LON)values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,' 	100台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
+insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,' 	100台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
+
+insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,' 	100台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a00','U',0,24.969479,121.193514);
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a01','U',0,24.9674754,121.1932079);
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a02','U',0,24.9682765,121.1900487);
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a03','U',0,25.0314901,121.5332146);
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a04','U',0,25.0741622,121.5341675);
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a05','U',0,24.1395013,120.6322513);
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a06','U',0,23.0010052,120.2094921);
+
+insert into place(p_no,p_name,p_sta,p_price,p_lat,p_lon)
+values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'a07','U',0,22.6283564,120.2863812);
 
 COMMIT;
 
