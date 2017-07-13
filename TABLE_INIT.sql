@@ -467,6 +467,13 @@ insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
 values('CR00000002','MG00000006','0');
 insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
 values('CR00000002','MG00000007','0');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000003','MG00000002','1');
+insert into chatroom_members(chatroom_no,mem_no,chatroom_role)
+values('CR00000003','MG00000009','0');
+
+COMMIT;
+
 
 -- 聊天室訊息紀錄.
 CREATE TABLE CHATROOM_MESSAGE(
@@ -507,6 +514,13 @@ insert into chatroom_message
 values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000002','MG00000001',sysdate,'安安',null);
 insert into chatroom_message
 values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000001','MG00000002',sysdate,'安安安安安安安安',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000003','MG00000002', SYSTIMESTAMP,'安12',null);
+insert into chatroom_message
+values('CM'||lpad(CR_MSG_NO_SQ.nextval,8,'0'),'CR00000003','MG00000009', SYSTIMESTAMP,'安34',null);
+
+COMMIT;
+
 
 -- 野餐團的聊天室訊息記錄.
 CREATE TABLE PCHATROOM_MES(
