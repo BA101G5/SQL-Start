@@ -174,7 +174,7 @@ CREATE TABLE MANUFACTURERS (
  MF_PHONE           VARCHAR2 (20) NOT NULL,
  MF_MAIL            VARCHAR2 (30) NOT NULL,
  MF_ACCO            VARCHAR2 (20) NOT NULL UNIQUE,
- MF_PSW             VARCHAR2 (20) NOT NULL,
+ MF_PSW             VARCHAR2 (128) NOT NULL,
  MF_LOGO            BLOB,
  MF_SELF            CLOB,
  MF_BS              VARCHAR2 (8),
@@ -191,13 +191,13 @@ NOCACHE
 NOCYCLE; 
 
 INSERT INTO MANUFACTURERS(MF_NO,MF_NAME,MF_PHONE,MF_MAIL,MF_ACCO,MF_PSW,MF_LOGO,MF_SELF,MF_BS,MF_ADDR,MF_FAX,MF_STA,MF_REPORTNUM)
-VALUES('MM' || LPAD(MF_NO_SQ.NEXTVAL, 8, '0'),'A全','0971323121','jijri@rjioj.com','Away121','ae0514545',null,'Hello, we are A全','03-22221','桃園區中壢區中央路一號','03-156121','U',15);
+VALUES('MM' || LPAD(MF_NO_SQ.NEXTVAL, 8, '0'),'A全','0971323121','jijri@gmail.com','Away121','ae0514545',null,'Hello, we are A全','00000000','桃園區中壢區中央路一號','03-156121','U',15);
 
 INSERT INTO MANUFACTURERS(MF_NO,MF_NAME,MF_PHONE,MF_MAIL,MF_ACCO,MF_PSW,MF_LOGO,MF_SELF,MF_BS,MF_ADDR,MF_FAX,MF_STA,MF_REPORTNUM)
-VALUES('MM' || LPAD(MF_NO_SQ.NEXTVAL, 8, '0'),'B歌','0972454221','reefc@rjioj.com','b5121','ae0514545',null,'Hello we are b歌','03-54454','桃園區中壢區中央路二號','03-454121','D',2);
+VALUES('MM' || LPAD(MF_NO_SQ.NEXTVAL, 8, '0'),'B歌','0972454221','reefc@gmail.com','b5121','ae0514545',null,'Hello we are b歌','00000001','桃園區中壢區中央路二號','03-454121','D',2);
 
 INSERT INTO MANUFACTURERS(MF_NO,MF_NAME,MF_PHONE,MF_MAIL,MF_ACCO,MF_PSW,MF_LOGO,MF_SELF,MF_BS,MF_ADDR,MF_FAX,MF_STA,MF_REPORTNUM)
-VALUES('MM' || LPAD(MF_NO_SQ.NEXTVAL, 8, '0'),'C++','0912121455','c++@gmial.com','ccaab','ae05w545',null,'Hello c++','03-23242','桃園區中壢區中央路三號','03-55521','D',8);
+VALUES('MM' || LPAD(MF_NO_SQ.NEXTVAL, 8, '0'),'C++','0912121455','c++@gmail.com','ccaab','ae05w545',null,'Hello c++','00000002','桃園區中壢區中央路三號','03-55521','D',8);
 
 
 
