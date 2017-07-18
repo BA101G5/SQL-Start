@@ -808,7 +808,7 @@ INSERT INTO Advertisement(AD_NO,MF_NO,AD_SELF,AD_PHOTO,DAY_START,DAY_END,AD_CASH
 CREATE TABLE PICMEM(
 PICNIC_NO               VARCHAR2(10) NOT NULL,
 MEM_NO                  VARCHAR2(10) NOT NULL,
-PICMEM_IDEN             VARCHAR2(9) NOT NULL,
+PICMEM_IDEN             CHAR(1) NOT NULL,
 PICMEM_STA              CHAR(1),
 MEM_LONGI               NUMBER(*),
 MEM_LATIT               NUMBER(*),
@@ -817,27 +817,27 @@ CONSTRAINT PICMEM_MEMNO_FK FOREIGN KEY(MEM_NO) REFERENCES GENERAL_MEMBER(MEM_NO)
 CONSTRAINT PICMEM_PK PRIMARY KEY(PICNIC_NO,MEM_NO));
 
 INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
-VALUES('PG00000001','MG00000002','團主');
+VALUES('PG00000001','MG00000002','A');
 INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
-VALUES('PG00000001','MG00000004','副團主');
+VALUES('PG00000001','MG00000004','B');
 INSERT INTO PICMEM(PICNIC_NO,MEM_NO,PICMEM_IDEN)
-VALUES('PG00000001','MG00000006','團員');
+VALUES('PG00000001','MG00000006','C');
 insert into picmem
-values ('PG00000001','MG00000001','團員',null,null,null);
+values ('PG00000001','MG00000001','C',null,null,null);
 insert into picmem
-values ('PG00000002','MG00000001','團員',null,null,null);
+values ('PG00000002','MG00000001','C',null,null,null);
 insert into picmem
-values ('PG00000008','MG00000001','團主',null,null,null);
+values ('PG00000008','MG00000001','A',null,null,null);
 insert into picmem
-values ('PG00000002','MG00000003','團員',null,null,null);
+values ('PG00000002','MG00000003','C',null,null,null);
 insert into picmem
-values ('PG00000002','MG00000005','團員',null,null,null);
+values ('PG00000002','MG00000005','C',null,null,null);
 insert into picmem
-values ('PG00000002','MG00000008','團員',null,null,null);
+values ('PG00000002','MG00000008','C',null,null,null);
 insert into picmem
-values ('PG00000002','MG00000009','團員',null,null,null);
+values ('PG00000002','MG00000009','C',null,null,null);
 COMMIT;
-
+--A團主　Ｂ副團主　Ｃ團員--
  
 -- 權限明細.
 CREATE TABLE PURVIEW_DETAIL(
