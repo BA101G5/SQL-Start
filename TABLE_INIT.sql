@@ -566,6 +566,38 @@ CONSTRAINT CHATROOM_MEMBERS_CHATROOMNO_FK FOREIGN KEY (CHATROOM_NO) REFERENCES C
 CONSTRAINT CHATROOM_MEMBERS_MEMNO_FK FOREIGN KEY (MEM_NO) REFERENCES GENERAL_MEMBER (MEM_NO),
 CONSTRAINT CHATEROOM_MEMBERS_PRIMARY_KEY PRIMARY KEY (CHATROOM_NO,MEM_NO));
 
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000001', 'MG00000002', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000001', 'MG00000003', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000002', 'MG00000002', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000002', 'MG00000005', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000003', 'MG00000002', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000003', 'MG00000006', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000004', 'MG00000002', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000004', 'MG00000007', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000005', 'MG00000002', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000005', 'MG00000008', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000006', 'MG00000002', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000006', 'MG00000009', NULL);
+
+COMMIT;
+
 
 -- 聊天室訊息紀錄.
 CREATE TABLE CHATROOM_MESSAGE(
