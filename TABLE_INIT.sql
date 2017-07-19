@@ -1206,13 +1206,9 @@ NOCACHE
 NOCYCLE;
 
 insert into ANNOUNCEMENT(ANN_NO, ANN_TEXT)
-values('AN'||LPAD(ANN_NO_SQ.nextval,'8','0'),'最新消息: 公告內文');
+values('AN'||LPAD(ANN_NO_SQ.nextval,'8','0'),'系統維護，2017/06/14(三) 將暫停服務。');
 insert into ANNOUNCEMENT(ANN_NO, ANN_TEXT)
-values('AN'||LPAD(ANN_NO_SQ.nextval,'8','0'),'最新消息: 服務異動公告 ');
-insert into ANNOUNCEMENT(ANN_NO, ANN_TEXT)
-values('AN'||LPAD(ANN_NO_SQ.nextval,'8','0'),'最新消息: 系統2017/06/14(三)暫停服務');
-insert into ANNOUNCEMENT(ANN_NO, ANN_TEXT)
-values('AN'||LPAD(ANN_NO_SQ.nextval,'8','0'),'最新消息: 歡迎報名參加');
+values('AN'||LPAD(ANN_NO_SQ.nextval,'8','0'),'現在註冊會員，立即贈送 100 元點數。');
 
 
 -- 屏蔽用關鍵字清單.
