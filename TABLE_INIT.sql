@@ -990,16 +990,16 @@ NOCACHE
 NOCYCLE;
 
 insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
-values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','太魯閣國家公園 ',SYSDATE,' 972花蓮縣秀林鄉富世村富世291號','40','太魯閣國家公園是台灣第四座成立的國家公園，前身為日治時期成立之次高太魯閣國立公園。第二次世界大戰後為國家級風景區，1986年11月12日公告計畫，1986年11月28日成立管理處。位於台灣東部，地跨花蓮縣、臺中市、南投縣三個行政區。園內有台灣第一條東西橫貫公路通過，稱為中橫公路系統。','A','25800','24.1587068','121.62162969999997');
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','太魯閣國家公園 ',SYSDATE,'花蓮縣秀林鄉富世村富世291號','40','太魯閣國家公園是台灣第四座成立的國家公園，前身為日治時期成立之次高太魯閣國立公園。第二次世界大戰後為國家級風景區，1986年11月12日公告計畫，1986年11月28日成立管理處。位於台灣東部，地跨花蓮縣、臺中市、南投縣三個行政區。園內有台灣第一條東西橫貫公路通過，稱為中橫公路系統。','A','25800','24.1587068','121.62162969999997');
 
 insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
-values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','陽明山國家公園 ',SYSDATE,' 	中華民國台北市、新北市','50','陽明山原名草山（臺羅：Tshau-suann），泛指大屯山、七星山、紗帽山、小觀音山這一帶的山區，而非單指某座山峰。清治時期，官府憂慮賊寇可匿於林中竊取硫磺，故定期放火燒山，因此整個山區只能長出五節芒這類的芒草。','A','45870','25.1942462','121.56093629999998');
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','陽明山國家公園 ',SYSDATE,'中華民國台北市、新北市','50','陽明山原名草山（臺羅：Tshau-suann），泛指大屯山、七星山、紗帽山、小觀音山這一帶的山區，而非單指某座山峰。清治時期，官府憂慮賊寇可匿於林中竊取硫磺，故定期放火燒山，因此整個山區只能長出五節芒這類的芒草。','A','45870','25.1942462','121.56093629999998');
 
 insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
-values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,' 	100台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,'台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
 
 insert into PLACE (P_NO,MF_NO,P_NAME,P_UNTIL,P_PLACE,P_POP,P_INFO,P_STA,P_PRICE,P_LAT,P_LON)
-values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,' 	100台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
+values('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0'),'MM00000002','中正紀念堂 ',SYSDATE,'台北市中正區中山南路21號','500','中正紀念堂是一座為紀念故前中華民國總統蔣中正而興建的建築，位於臺北市中正區，也是眾多紀念蔣中正總統的建築中規模最大者。','A','45870','25.036182','121.51869540000007');
 
 insert into place(p_no,picnic_no,p_name,p_sta,p_price,p_lat,p_lon)
 values(('P'||LPAD(P_NO_SQ.NEXTVAL,'9','0')),'PG00000001','a00','U',0,24.969479,121.193514);
@@ -1055,11 +1055,11 @@ MAXVALUE 99999999
 NOCACHE
 NOCYCLE;
 
-insert into GOODS_RENT(GR_NO,MF_NO,P_NO,GR_NAME,GR_DATE,GR_PRICE,GR_COUNT,GR_INFO,GR_UNTIL,GR_PLACE,GR_STA) values('GR'||LPAD(GR_NO_SQ.nextval,'8','0'),'MM00000002','P000000001','救生圈',SYSDATE,'999','10','救生圈',SYSDATE + 1, '中華民國台北市、新北市','N');
+insert into GOODS_RENT(GR_NO,MF_NO,P_NO,GR_NAME,GR_DATE,GR_PRICE,GR_COUNT,GR_INFO,GR_UNTIL,GR_PLACE,GR_STA) values('GR'||LPAD(GR_NO_SQ.nextval,'8','0'),'MM00000002','P000000001','救生圈',SYSDATE,'999','10','救生圈',SYSDATE + 1, '花蓮縣秀林鄉富世村富世291號','N');
 
-insert into GOODS_RENT(GR_NO,MF_NO,P_NO,GR_NAME,GR_DATE,GR_PRICE,GR_COUNT,GR_INFO,GR_UNTIL,GR_PLACE,GR_STA) values('GR'||LPAD(GR_NO_SQ.nextval,'8','0'),'MM00000002','P000000001','人工呼吸器',SYSDATE,'999546','10','人工呼吸器',SYSDATE + 1, '中華民國台北市、新北市','N');
+insert into GOODS_RENT(GR_NO,MF_NO,P_NO,GR_NAME,GR_DATE,GR_PRICE,GR_COUNT,GR_INFO,GR_UNTIL,GR_PLACE,GR_STA) values('GR'||LPAD(GR_NO_SQ.nextval,'8','0'),'MM00000002','P000000001','人工呼吸器',SYSDATE,'999546','10','人工呼吸器',SYSDATE + 1, '花蓮縣秀林鄉富世村富世291號','N');
 
-insert into GOODS_RENT(GR_NO,MF_NO,P_NO,GR_NAME,GR_DATE,GR_PRICE,GR_COUNT,GR_INFO,GR_UNTIL,GR_PLACE,GR_STA) values('GR'||LPAD(GR_NO_SQ.nextval,'8','0'),'MM00000002','P000000001','心臟除顫器',SYSDATE,'999546','10','心臟除顫器',SYSDATE + 1, '中華民國台北市、新北市','N');
+insert into GOODS_RENT(GR_NO,MF_NO,P_NO,GR_NAME,GR_DATE,GR_PRICE,GR_COUNT,GR_INFO,GR_UNTIL,GR_PLACE,GR_STA) values('GR'||LPAD(GR_NO_SQ.nextval,'8','0'),'MM00000002','P000000001','心臟除顫器',SYSDATE,'999546','10','心臟除顫器',SYSDATE + 1, '花蓮縣秀林鄉富世村富世291號','N');
 
 COMMIT;
 
