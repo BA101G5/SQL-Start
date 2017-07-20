@@ -554,6 +554,54 @@ INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
   VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'熱線你和我',NULL);
 INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
   VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'不要亂摸我',NULL);
+INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'12',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'15',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'19',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'23',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'29',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'32',NULL);
 
 COMMIT;
 
@@ -597,6 +645,117 @@ insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000006', 'MG00000002', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000006', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000007', 'MG00000001', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000007', 'MG00000003', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000008', 'MG00000001', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000008', 'MG00000005', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000009', 'MG00000001', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000009', 'MG00000006', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000010', 'MG00000001', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000010', 'MG00000007', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000011', 'MG00000001', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000011', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000012', 'MG00000001', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000012', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000013', 'MG00000003', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000013', 'MG00000009', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000014', 'MG00000003', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000014', 'MG00000009', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000015', 'MG00000003', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000015', 'MG00000009', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000016', 'MG00000003', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000016', 'MG00000009', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000017', 'MG00000003', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000017', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000018', 'MG00000004', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000018', 'MG00000003', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000019', 'MG00000004', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000019', 'MG00000005', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000020', 'MG00000004', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000020', 'MG00000006', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000021', 'MG00000004', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000021', 'MG00000007', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000022', 'MG00000004', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000022', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000023', 'MG00000004', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000023', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000024', 'MG00000005', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000024', 'MG00000009', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000025', 'MG00000005', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000025', 'MG00000009', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000026', 'MG00000005', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000026', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000027', 'MG00000006', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000027', 'MG00000007', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000028', 'MG00000006', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000028', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000029', 'MG00000006', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000029', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000030', 'MG00000007', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000030', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000031', 'MG00000007', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000031', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000032', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000032', 'MG00000009', NULL);
 
 COMMIT;
 
