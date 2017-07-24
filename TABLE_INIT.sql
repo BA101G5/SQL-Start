@@ -602,6 +602,8 @@ INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
   VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'9',NULL);
   INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
   VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'32',NULL);
+  INSERT INTO CHATROOM(CHATROOM_NO,CHATROOM_NAME,CHATROOM_KIND)
+  VALUES('CR' || LPAD(CHATROOM_NO_SQ.NEXTVAL, 8, '0'),'33',NULL);
 
 COMMIT;
 
@@ -674,19 +676,19 @@ values('CR00000012', 'MG00000009', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000013', 'MG00000003', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000013', 'MG00000009', NULL);
+values('CR00000013', 'MG00000005', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000014', 'MG00000003', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000014', 'MG00000009', NULL);
+values('CR00000014', 'MG00000006', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000015', 'MG00000003', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000015', 'MG00000009', NULL);
+values('CR00000015', 'MG00000007', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000016', 'MG00000003', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000016', 'MG00000009', NULL);
+values('CR00000016', 'MG00000008', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000017', 'MG00000003', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
@@ -720,42 +722,46 @@ values('CR00000023', 'MG00000009', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000024', 'MG00000005', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000024', 'MG00000009', NULL);
+values('CR00000024', 'MG00000006', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000025', 'MG00000005', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000025', 'MG00000009', NULL);
+values('CR00000025', 'MG00000007', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000026', 'MG00000005', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000026', 'MG00000009', NULL);
+values('CR00000026', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000027', 'MG00000005', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000027', 'MG00000009', NULL);
 
-insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000027', 'MG00000006', NULL);
-insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000027', 'MG00000007', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000028', 'MG00000006', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000028', 'MG00000008', NULL);
+values('CR00000028', 'MG00000007', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000029', 'MG00000006', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000029', 'MG00000009', NULL);
+values('CR00000029', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000030', 'MG00000006', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000030', 'MG00000009', NULL);
 
-insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000030', 'MG00000007', NULL);
-insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000030', 'MG00000008', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000031', 'MG00000007', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000031', 'MG00000009', NULL);
-
+values('CR00000031', 'MG00000008', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
-values('CR00000032', 'MG00000008', NULL);
+values('CR00000032', 'MG00000007', NULL);
 insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
 values('CR00000032', 'MG00000009', NULL);
+
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000033', 'MG00000008', NULL);
+insert into chatroom_members(chatroom_no, mem_no, chatroom_role)
+values('CR00000033', 'MG00000009', NULL);
 
 COMMIT;
 
@@ -1248,9 +1254,9 @@ NOCYCLE;
 
 insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA,GS_TYPE) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','手術刀',SYSDATE,'15200','一把手術刀由一個刀柄和一個刀刃組成，大部分都以不銹鋼製造。刀刃可以有多種形式（比如右手側的，彎曲的，鐮刀狀的等等），刀刃可以更換。 它非常鋒利，切割起來不必花費力氣。手術刀只可以單獨使用。一般用塑料包裝，也可以用金屬包裝。這種情況手術刀片只能一次性使用，刀柄經清洗及高溫消毒後可重複使用。','08078708545405','U','A');
 
-insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA,GS_TYPE) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','擔架床',SYSDATE,'1707','擔架床為運送傷者之救傷工具，由兩支承槓支撐著一塊帆布床身，承槓兩端連接手柄和滑輪。一些擔架床的承槓可以伸縮。床頭有枕袋，可塞入柔軟的物件。','08078708545405','U','A');
+insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA,GS_TYPE) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','擔架床',SYSDATE,'1707','擔架床為運送傷者之救傷工具，由兩支承槓支撐著一塊帆布床身，承槓兩端連接手柄和滑輪。一些擔架床的承槓可以伸縮。床頭有枕袋，可塞入柔軟的物件。','08078708545405','U','B');
 
-insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA,GS_TYPE) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','非黏性敷料',SYSDATE,'1707','非黏性敷料（Non-adhesive dressings），顧名思義，就是沒有黏性的敷料，分為標準無黏敷料 (Prepared standard sterile dressings)和紗布敷料。','08078708545405','U','A');
+insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA,GS_TYPE) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','非黏性敷料',SYSDATE,'1707','非黏性敷料（Non-adhesive dressings），顧名思義，就是沒有黏性的敷料，分為標準無黏敷料 (Prepared standard sterile dressings)和紗布敷料。','08078708545405','U','C');
 
 insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA,GS_TYPE) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','軟針筒',SYSDATE,'50','標售針筒市售常見的容量為0.5,1,3,5,10cc(ml) 所以如果筒身上面的刻度線,若是有印著5ml字樣,就是5cc(ml)的沒錯。','08078708545405','U','A');
 insert into GOODS_SELL(GS_NO,MF_NO,GS_NAME,GS_DATE,GS_PRICE,GS_INFO,GS_IMG,GS_STA,GS_TYPE) values ('GS'||LPAD(GS_NO_SQ.nextval,8,0),'MM00000003','硬針筒',SYSDATE,'50','針筒／試管標籤使用在幼小及高弧度的針筒或試管身上，採用物料必須要有適合柔韌度、具有強黏貼力，印色要清晰耐久及提供準確刻度。','08078708545405','U','A');
